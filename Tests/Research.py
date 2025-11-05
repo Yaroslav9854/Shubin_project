@@ -19,6 +19,6 @@ while counter != a + 1:
 #3
 #Переписать 1 задание на цикл for
 
-a = int(input("Введите число от 1 до 100: "))
-for _ in range(a):
-    print(f'Мы любим своё дело. {counter} ')
+# a = int(input("Введите число от 1 до 100: "))
+# for _ in range(a):
+#     print(f'Мы любим своё дело. {counter} ')

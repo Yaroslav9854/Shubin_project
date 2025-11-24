@@ -14,7 +14,7 @@ strings-AND_LISTS
 # print(list2)
 #
 # # Операции со списками
-# list3 = list + list2
+list3 = list + list2
 # #Объединение списков
 # print(f"третий список {list3}")
 # # Умножение списков

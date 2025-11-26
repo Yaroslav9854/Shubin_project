@@ -20,7 +20,7 @@ def process_text(text):
     }
 text = "привет! как дела? у меня все хорошо. сегодня 25 число. а у вас?"
 result = process_text(text)
-print("Отформатированный текст:")
+print("Текст был отремонтирован:")
 print(result['formatted_text'])
 print("\nКоличество цифр:", result['digits_count'])
 print("Количество знаков препинания:", result['punctuation_count'])

@@ -1,0 +1,66 @@
+from random import randint
+
+# def some_function(number_1)
+#     a = number_1 * number_1
+#     if a > 100
+#         return a
+#     else:
+#         return
+# val = some_function(number_1 = 20)
+# print(val)
+
+# def some_function(number_1, number_2):
+# example = input("Введите арифметическое выражение: ")
+#     val_1 = some_function(number_1 = 40, number_2 = 20)
+# def greetings (example = "float"):
+#     print(f"Наберите пример: {number_1} {example} {number_2}")
+#     greetings("*")
+
+# def calc_numbers():
+#     example = input("Введите арифметическое выражение: ")
+#     if '+' in example:
+#         a, b = example.split('+')
+#         result = float(a) + float(b)
+#     elif '-' in example:
+#         a, b = example.split('-')
+#         result = float(a) - float(b)
+#     elif '*' in example:
+#         a, b = example.split('*')
+#         result = float(a) * float(b)
+#     elif '/' in example:
+#         a, b = example.split('/')
+#         if float(b) == 0:
+#             print("Ошибка: Нельзя делить на ноль!")
+#             exit()
+#         result = float(a) / float(b)
+#     else:
+#         print("Ошибка: выражение написано направильно")
+#         exit()
+#     print(f"Результат: {result}")
+#
+# calc_numbers()
+
+def listsort():
+    random = [randint(-50, 50) for _ in range(20)]
+    random.sort()
+    print("Создан случайный список:", random)
+    min = max = random[0]
+# negative = positive = zero = 0
+# for number in random:
+#     if number < min:
+#         min = number
+#     if number > max:
+#         max = number
+#     if number < 0:
+#         negative += 1
+#     elif number > 0:
+#         positive += 1
+#     else:
+#         zero += 1
+    print(f"Минимальное значение: {min}")
+    print(f"Максимальное значение: {max}")
+# print(f"Количество отрицательных элементов: {negative}")
+# print(f"Количество положительных элементов: {positive}")
+# print(f"Количество нулей: {zero}")
+
+listsort()

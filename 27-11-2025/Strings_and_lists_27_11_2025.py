@@ -1,5 +1,4 @@
 # №1
-
 # example = input("Введите арифметическое выражение: ")
 # if '+' in example:
 #     a, b = example.split('+')
@@ -20,9 +19,7 @@
 #     print("Ошибка: выражение написано направильно")
 #     exit()
 # print(f"Результат: {result}")
-
 # №2
-
 # import random
 #
 # random = [random.randint(-50, 50) for _ in range(20)]

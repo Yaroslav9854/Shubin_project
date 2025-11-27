@@ -1,13 +1,6 @@
 from random import randint
 
-# def some_function(number_1)
-#     a = number_1 * number_1
-#     if a > 100
-#         return a
-#     else:
-#         return
-# val = some_function(number_1 = 20)
-# print(val)
+
 
 # def some_function(number_1, number_2):
 # example = input("Введите арифметическое выражение: ")

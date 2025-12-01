@@ -32,26 +32,41 @@ re.MULTILINE - изменяет поведение метасимволов ^ и
 re.DOTALL - делает так что точка матчит абсолютно любой символ, включая переносы строк.
 """
 # 1
+# numbers = [-2, -4, -5, 20, 18]
+# numbers.sort()
+# t = 0
+# i = 0
+# while i < len(numbers):
+#     if numbers[i] < 0:
+#         t += numbers[i]
+#     else:
+#         break
+#     i += 1
+# print(f"Наша сумма отрицательных чисел: {t}")
+# # 2, 3
+# parity_of_numbers = [5, 2, 3, 19]
+# a = 0
+# b = 0
+# for x in parity_of_numbers:
+#    if x % 2 == 0 :
+#        a += x
+#    elif x % 2 != 0:
+#        b += x
+# print(f"Наша сумма четных чисел: {a}")
+# print(f"Наша сумма нечетных чисел: {b}")
+# 4
+# s = input("Введите элемент: ")
+# c = list(map(int, input("Введите индекс: ").split()))
+# for u in c:
+#     if u % 3 == 0:
+#         s *= u
+# print(f"Произведение элементов кратные 3: {s}")
+
+
+# 4. Произведение элементов с индексами кратными 3
 numbers = [-2, -4, -5, 20, 18]
-numbers.sort()
-t = 0
-i = 0
-while i < len(numbers):
-    if numbers[i] < 0:
-        t += numbers[i]
-    else:
-        break
-    i += 1
-print(f"Наша сумма отрицательных чисел: {t}")
-# 2
-parity_of_numbers = [5, 2, 3, 19]
-a = 0
-b = 0
-for x in parity_of_numbers:
-   if x % 2 == 0 :
-       a += x
-   elif x % 2 != 0:
-       b += x
-print(f"Наша сумма четных чисел: {a}")
-print(f"Наша сумма нечетных чисел: {b}")
-# #-11
+product_multiples_3 = 1
+for g in range(len(numbers)):
+    if g % 3 == 0 and numbers[g] != 0:
+        product_multiples_3 *= numbers[g]
+print("Произведение элементов с индексами кратными 3:", product_multiples_3)

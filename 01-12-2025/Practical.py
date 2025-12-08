@@ -81,7 +81,6 @@ print(draw_line(3, 'vertical', '#'))
 # Если число простое нужно вернуть из метода true, иначе false.
 
 def is_prime(number):
-    # Проверяем базовые случаи
     if number <= 1:
         return False
     if number <= 3:

@@ -24,7 +24,27 @@
 # Функция принимает в качестве параметра: длину линии, направление, символ.
 
 # def draw
-
+def draw_line(length, direction, symbol):
+    """
+    Рисует горизонтальную или вертикальную линию
+    Параметры:
+    length (int) - длина линии
+    direction (str) - направление ('horizontal' или 'vertical')
+    symbol (str) - символ для рисования
+    """
+    if direction.lower() == 'horizontal':
+        # Для горизонтальной линии просто соединяем символы
+        return symbol * length
+    elif direction.lower() == 'vertical':
+        # Для вертикальной линии выводим символ на новой строке
+        return '\n'.join([symbol for _ in range(length)])
+    else:
+        raise ValueError("Направление должно быть 'horizontal' или 'vertical'")
+    # Примеры использования:
+# Горизонтальная линия
+print(draw_line(5, 'horizontal', '*'))  # *****
+# Вертикальная линия
+print(draw_line(3, 'vertical', '#'))
 
 # Напишите функцию, которая возвращает максимальное из четырёх чисел.
 # Числа передаются в качестве параметров.

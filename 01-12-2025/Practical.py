@@ -30,7 +30,7 @@ def draw_line(length, direction, symbol):
     Параметры:
     length (int) - длина линии
     direction (str) - направление ('horizontal' или 'vertical')
-    symbol (str) - символ для рисования
+    symbol (str) - символ для рисования.
     """
     if direction.lower() == 'horizontal':
         # Для горизонтальной линии просто соединяем символы

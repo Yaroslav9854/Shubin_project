@@ -30,7 +30,7 @@ def draw_line(length, direction, symbol):
     Параметры:
     length (int) - длина линии
     direction (str) - направление ('horizontal' или 'vertical')
-    symbol (str) - символ для рисования
+    symbol (str) - символ для рисования.
     """
     if direction.lower() == 'horizontal':
         # Для горизонтальной линии просто соединяем символы
@@ -80,7 +80,21 @@ print(draw_line(3, 'vertical', '#'))
 # Число передаётся в качестве параметра.
 # Если число простое нужно вернуть из метода true, иначе false.
 
-# def is_prime(p):
+def is_prime(number):
+    if number <= 1:
+        return False
+    if number <= 3:
+        return True
+        # Исключаем четные числа и кратные 3
+    if number % 2 == 0 or number % 3 == 0:
+        return False
+        # Проверяем делители от 5 до корня из числа
+    i = 5
+    while i * i <= number:
+        if number % i == 0 or number % (i + 2) == 0:
+            return False
+        i += 6
+    return True
 
 
 # Напишите функцию, которая проверяет является ли шестизначное число «счастливым».

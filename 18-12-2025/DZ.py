@@ -1,13 +1,13 @@
-# # №1
-# # Пользователь вводит с клавиатуры два числа.
-# # Нужно показать все числа в указанном диапазоне.
-# start = int(input("Введите первое число: "))
-# end = int(input("Введите второе число: "))
-# if start > end:
-#     start, end = end, start
-# print(f"Числа в диапазоне от {start} до {end}:")
-# for number in range(start, end + 1):
-#     print(number)
+# №1
+# Пользователь вводит с клавиатуры два числа.
+# Нужно показать все числа в указанном диапазоне.
+start = int(input("Введите первое число: "))
+end = int(input("Введите второе число: "))
+if start > end:
+    start, end = end, start
+print(f"Числа в диапазоне от {start} до {end}:")
+for number in range(start, end + 1):
+    print(number)
 
 # # №2
 # # Пользователь вводит с клавиатуры два числа.

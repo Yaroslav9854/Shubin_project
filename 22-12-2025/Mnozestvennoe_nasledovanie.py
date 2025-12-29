@@ -33,7 +33,7 @@
 #
 #     def vse_info(self):
 #         result = []
-#         for cls in type(self).__mro__[:-1]:  # перебираем цепочку наследования кроме самого объекта
+#         for cls in type(self).__mro__[:-1]:
 #             if hasattr(cls, 'info'):
 #                 result.append(cls.info(self))
 #         return '\n'.join(result)
@@ -130,74 +130,78 @@
 # hamster.type()  # Вид: Хомяк
 # hamster.sound()  # Пи-пи-пи!
 
-# №4
-
-# Базовый класс
-class Employer:
-    def __init__(self):
-        pass
-
-    def print(self):
-        print("This is Employer class")
-
-    # Производный класс для президента
-
-
-class President(Employer):
-    def __init__(self, name, company):
-        super().__init__()
-        self.name = name
-        self.company = company
-
-    def print(self):
-        print(f"President: {self.name}")
-        print(f"Company: {self.company}")
-        print("Responsible for strategic management")
-
-    # Производный класс для менеджера
-
-
-class Manager(Employer):
-    def __init__(self, name, department):
-        super().__init__()
-        self.name = name
-        self.department = department
-
-    def print(self):
-        print(f"Manager: {self.name}")
-        print(f"Department: {self.department}")
-        print("Responsible for team management")
-
-    # Производный класс для работника
-
-
-class Worker(Employer):
-    def __init__(self, name, position):
-        super().__init__()
-        self.name = name
-        self.position = position
-
-    def print(self):
-        print(f"Worker: {self.name}")
-        print(f"Position: {self.position}")
-        print("Performs daily tasks")
-
-    # Пример использования
-
-
-if __name__ == "__main__":
-    # Создаём объекты
-    employer = Employer()
-    president = President("John Doe", "TechCorp")
-    manager = Manager("Alice Smith", "Sales")
-    worker = Worker("Bob Johnson", "Software Developer")
-
-    # Выводим информацию
-    print("Базовый класс:")
-    employer.print()
-    print("\nПрезидент:")
-    president.print()
-    print("\nМенеджер:")
-    manager.print()
-    print("\nРаботник:")
-    worker.print()
+# # № 4 - 5
+#
+# # Базовый класс
+# class Employer:
+#     def __str__(self):
+#         pass
+#
+#     def print(self):
+#         print("This is Employer class")
+#
+#     # Производный класс для президента
+#
+#
+# class President(Employer):
+#     def __init__(self, name, company):
+#         super().__init__()
+#         self.name = name
+#         self.company = company
+#
+#     def print(self):
+#         print(f"President: {self.name}")
+#         print(f"Company: {self.company}")
+#         print("Responsible for strategic management")
+#
+#     # Производный класс для менеджера
+#
+#
+# class Manager(Employer):
+#     def __init__(self, name, department):
+#         super().__init__()
+#         self.name = name
+#         self.department = department
+#
+#     def print(self):
+#         print(f"Manager: {self.name}")
+#         print(f"Department: {self.department}")
+#         print("Responsible for team management")
+#
+#     # Производный класс для работника
+#
+#
+# class Worker(Employer):
+#     def __init__(self, name, position):
+#         super().__init__()
+#         self.name = name
+#         self.position = position
+#
+#     def print(self):
+#         print(f"Worker: {self.name}")
+#         print(f"Position: {self.position}")
+#         print("Performs daily tasks")
+#
+# my_str = Employer()
+# print(str(Employer))
+# cool_str = str()
+#
+#     # Пример использования
+#
+#
+# if __name__ == "__main__":
+#     # Создаём объекты
+#     employer = Employer()
+#     president = President("John Doe", "TechCorp")
+#     manager = Manager("Alice Smith", "Sales")
+#     worker = Worker("Bob Johnson", "Software Developer")
+#
+#     # Выводим информацию
+#     print("Базовый класс:")
+#     employer.print()
+#     print("\nПрезидент:")
+#     president.print()
+#     print("\nМенеджер:")
+#     manager.print()
+#     print("\nРаботник:")
+#     worker.print()

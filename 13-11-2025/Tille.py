@@ -66,4 +66,3 @@ Hello World
 #     print(f"Число {n} есть в списке")
 # else:
 #     print(f"Числа {n} нет в списке")
-

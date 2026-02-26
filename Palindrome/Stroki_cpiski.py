@@ -1,4 +1,6 @@
 # №1
+
+
 def is_palindrome(text):
     # Приводим текст к нижнему регистру и убираем пробелы
     cleaned_text = text.lower().replace(" ", "")
@@ -16,7 +18,10 @@ if is_palindrome(user_input):
 else:
     print("Введённая строка не является палиндромом.")
 
+
 # №2
+
+
 # Получаем текст от пользователя
 text = input("Введите текст: ")
 
@@ -40,7 +45,10 @@ result = ' '.join(words)
 print("Измененный текст:")
 print(result)
 
+
 # №3
+
+
 def count_sentences(text):
     # Разбиваем текст на предложения по точке
     sentences = text.split('.')
